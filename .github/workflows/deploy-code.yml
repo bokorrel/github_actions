@@ -12,8 +12,8 @@ jobs:
      steps:
        - run: echo "Run Tests workflow was a success"
 
-   on-failure:
-     runs-on: ubuntu-latest
-     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-     steps:
-       - run: echo "Run Tests workflow was a failure"
+#    on-failure:
+#      runs-on: ubuntu-latest
+#      if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+#      steps:
+#        - run: echo "Run Tests workflow was a failure"
